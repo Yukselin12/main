@@ -72,7 +72,7 @@ async def meme(ctx):
     await ctx.send(file=picture)
 
 @bot.command()
-async def gatos(ctx):
+async def gato(ctx):
     meme_alet = random.choice(os.listdir("images_cat"))
     with open(f'images_cat/{meme_alet}', 'rb') as f:
         # ¡Vamos a almacenar el archivo de la biblioteca Discord convertido en esta variable!
